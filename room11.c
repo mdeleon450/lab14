@@ -10,7 +10,7 @@ void main(void)
 	puts("a damp room, mostly empty, three boxes lay on the floor");
 	puts("you feel the urge to look through them");
 	puts("how many would you like to look through?");
-	scanf("%d",numChoice);
+	scanf("%d",numChoice);// segmentation falult?
 	if(numChoice>3||numChoice==0)
 	{
 		puts("why? just leave");
