@@ -8,15 +8,17 @@ void main(void)
 	puts("you feel the urge to look through them");
 	puts("pick one of the boxes");
 	scanf("%d",numChoice);
-	if(numChoice==1)
+	switch(numChoice)
 	{
-		puts("an empty box");
-	}else if(numChoice==2)
-	{
-		
-	}else
-	{
-		
+		case 1:
+			puts("box #%d was empty",numChoice);	
+			break;
+		case 2:
+			puts("box #%d was empty",numChoice);
+			break;
+		case 3:
+			puts("box #%d was empty",numChoice);
+			break;
 	}
 
 	
