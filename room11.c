@@ -3,22 +3,35 @@
 
 void main(void)
 {
-	int numChoice;
+	int numChoice=0;
+	int boxNum=0;
 	puts("a damp room, mostly empty, three boxes lay on the floor");
 	puts("you feel the urge to look through them");
-	puts("pick one of the boxes");
+	puts("how many would you like to look through?");
 	scanf("%d",numChoice);
-	switch(numChoice)
+	if(numChoice>3||numChoice==0)
 	{
-		case 1:
-			puts("box #%d was empty",numChoice);	
-			break;
-		case 2:
-			puts("box #%d was empty",numChoice);
-			break;
-		case 3:
-			puts("box #%d was empty",numChoice);
-			break;
+		puts("why? just leave");
+	}
+	else
+	{
+		for(i=0;i<numChoice;i++)
+		{
+			puts("which box would you like to look in?");
+			scanf("%d",boxNum);
+			switch(boxNum)
+			{
+				case 1:
+					puts("box #%d was empty",boxNum);
+					break;
+				case 2:
+					puts("box #%d was empty",boxNum);
+					break;
+				case 3:
+					puts("box #%d was empty",boxNum);
+					break;
+			}
+		}
 	}
 
 	
