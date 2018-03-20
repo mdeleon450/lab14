@@ -10,17 +10,17 @@ void main(void)
 	puts("a damp room, mostly empty, three boxes lay on the floor");
 	puts("you feel the urge to look through them");
 	puts("how many would you like to look through?");
-	scanf("%d",numChoice);// segmentation falult?
+	scanf("%d",&numChoice);
 	if(numChoice>3||numChoice==0)
 	{
-		puts("why? just leave");
+		printf("why? just leave\n");
 	}
 	else
 	{
 		for(i=0;i<numChoice;i++)
 		{
-			puts("which box would you like to look in?");
-			scanf("%d",boxNum);
+			printf("which box would you like to look in?\n");
+			scanf("%d",&boxNum);
 			switch(boxNum)
 			{
 				case 1:
@@ -37,7 +37,7 @@ void main(void)
 	}
 	if(numChoice==3)
 	{
-		puts("you wasted your time here, you leave now");
+		printf("you wasted your time here, you leave now\n");
 	}
 
 	
