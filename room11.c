@@ -13,7 +13,7 @@ void main(void)
 	scanf("%d",&numChoice);
 	if(numChoice>3||numChoice==0)
 	{
-		printf("why? just leave\n");
+		printf("why?... just leave\n");
 	}
 	else
 	{
@@ -37,7 +37,7 @@ void main(void)
 	}
 	if(numChoice==3)
 	{
-		printf("you wasted your time here, you leave now\n");
+		printf("you wasted your time here, time for you to leave\n");
 	}
 
 	
